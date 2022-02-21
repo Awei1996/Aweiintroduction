@@ -5,6 +5,9 @@
 		<title>個人簡歷</title>
 		<link href="index.css" rel="stylesheet" type="text/css">
 		<script src="jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.3/lottie.min.js"></script>
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 		
 	</head>
    
@@ -12,22 +15,7 @@
     <body>
 		<div class="section">
 			<div class="MG">
-				<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.3/lottie.min.js"></script>
-				<script type="text/javascript" src="MG.json"></script>
-				<script>
-					var params = {	
-							container: document.getElementById('lottie'),
-							renderer: 'svg',
-							loop: true,
-							autoplay: true,
-							animationData: animationData
-						};
-
-					var anim;
-
-					anim = lottie.loadAnimation(params);
-
-				</script>
+				<lottie-player src="MG.json"  background="transparent"  speed="1"  style="width: 100%; height: auto;"  loop  autoplay></lottie-player>
 			</div>
 		</div>
 		
